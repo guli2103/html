@@ -1,0 +1,429 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Title -->
+		<title>SUSYS</title>
+
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta name="description" content="Download Tank - Creative Portfolio Showcase HTML Website Template that comes with rich features and well-commented code. Made by Themetorium.">
+		<meta name="author" content="themetorium.net">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Favicon (http://www.favicon-generator.org/) -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<!-- Google Analytics - Global site tag (gtag.js) -->
+		<!-- Paste your Google Anaytics code here. -->
+
+		<!-- Google fonts (https://www.google.com/fonts) -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Body font -->
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet"> <!-- Secondary/Alter font -->
+
+		<!-- Libs and Plugins CSS -->
+		<link rel="stylesheet" href="{% static 'vendor/normalize/normalize.min.css' %}"> <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
+		<link rel="stylesheet" href="{% static 'vendor/fontawesome/css/fontawesome-all.min.css' %}"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+		<link rel="stylesheet" href="{% static 'vendor/swiper/css/swiper-bundle.min.css' %}"> <!-- Swiper CSS (https://swiperjs.com/) -->
+		<link rel="stylesheet" href="{% static 'vendor/lightgallery/css/lightgallery.min.css' %}"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
+
+		<!-- Template master CSS -->
+		<link rel="stylesheet" href="{% static 'css/helper.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme.css' %}">
+
+	</head>
+
+	
+	<!-- ===========
+	///// Body /////
+	================
+	* Use class "tt-boxed" to enable page boxed layout globally (affects all elements containing class "tt-wrap").
+	* Use class "tt-smooth-scroll" to enable page smooth scrolling.
+	* Use class "tt-transition" to enable page transitions.
+	* Use class "tt-magic-cursor" to enable magic cursor.
+	-->
+	<body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
+
+
+		<!-- *************************************
+		*********** Begin body inner ************* 
+		************************************** -->
+		<main id="body-inner">
+
+			<!-- Begin page transition (do not remove!!!) 
+			=========================== -->
+			<div id="page-transition">
+				<div class="ptr-overlay"></div>
+				<div class="ptr-preloader">
+					<div class="ptr-prel-content">
+						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
+						<img src="{% static 'img/logo.png' %}" class="ptr-prel-image tt-logo-light" alt="Logo">
+					</div> <!-- /.ptr-prel-content -->
+				</div> <!-- /.ptr-preloader -->
+			</div>
+			<!-- End page transition -->
+
+			<!-- Begin magic cursor 
+			======================== -->
+			<!-- <div id="magic-cursor">
+				<div id="ball"></div>
+			</div> -->
+			<!-- End magic cursor -->
+
+			<!-- Begin noise background -->
+			<div class="bg-noise"></div>
+			<!-- End noise background --> 
+
+
+			<!-- *****************************************
+			*********** Begin scroll container *********** 
+			****************************************** -->
+			<div id="scroll-container"> 
+				
+				<!-- ===================
+				///// Begin header /////
+				========================
+				* Use class "tt-header-fixed" to set header to fixed position.
+				-->
+				<header id="tt-header" class="tt-header-fixed">
+					<div class="tt-header-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
+
+						<div class="tt-header-col">
+
+							<!-- Begin logo 
+							================ -->
+							<div class="tt-logo"> 
+								<a href="index.html">
+									<!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
+									<img src="{% static 'img/logo.png' %}" class="tt-logo-light magnetic-item" alt="Logo"> <!-- logo light -->
+									
+								</a>
+							</div>
+							<!-- End logo -->
+
+						</div> <!-- /.tt-header-col -->
+
+						
+							<!-- Begin header tools
+							======================== -->
+							<div class="tt-header-tools">
+
+								<!-- Begin header tools item (tt-Search) -->
+								<div class="tt-header-tools-item tt-search-trigger-wrap">
+
+									<div class="tt-search-trigger">
+										<div class="tt-hti-btn tt-search-trigger-icon magnetic-item" title="Search">
+											<i class="fas fa-search"></i>
+										</div>
+									</div> <!-- /.tt-search-trigger -->
+
+									<!-- Begin tt-Search 
+									===================== -->
+									<div class="tt-search">
+										<div class="tt-search-close cursor-close">
+											<div class="bg-noise"></div>
+										</div>
+										<div class="tt-search-inner">
+											<h1 class="tt-search-title tt-search-appear">Qidirish</h1>
+
+											<!-- Begin form (Note: for design purposes only!)
+											================ 
+											* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
+											* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
+											-->
+											<form class="tt-search-form tt-search-appear tt-form-minimal tt-form-lg">
+												<div class="tt-form-btn-inside">
+													<input class="tt-form-control" type="text" id="search" placeholder="Kerakli ma'lumotni yozing..." required>
+													<button type="submit"><i class="fas fa-search"></i></button>
+												</div>
+											</form>
+											 <!-- End form -->
+											
+										</div> <!-- /.tt-search-inner -->
+
+										<div class="tt-search-ghost tt-search-appear">SUSYS</div>
+										<div class="tt-search-close-btn hide-cursor" title="Close"><i class="fas fa-times"></i></div>
+									</div>
+									<!-- End tt-Search -->
+
+								</div> 
+								<!-- End header tools item -->
+
+							</div>
+							<!-- End header tools -->
+
+
+					</div> <!-- /.header-inner -->
+				</header>
+				<!-- End header -->
+
+				
+				<!-- *************************************
+				*********** Begin content wrap *********** 
+				************************************** -->
+				<div id="content-wrap">
+
+					
+					<!-- ========================
+					///// Begin page header /////
+					============================= 
+					* Use class "ph-full" to enable fullscreen size.
+					* Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" or "ph-cap-xxlg" to set caption size (no class = default size).
+					* Use class "ph-center" to enable content center position.
+					* Use class "ph-bg-image" to enable page header background image (required for a portfolio single project!).
+					* Use class "ph-bg-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image (effect only with class "ph-bg-image").
+					* Use class "ph-image-shadow" to enable page header background image (effect only with class "ph-bg-image").
+					* Use class "ph-image-cropped" to crop image. It fixes image dimensions (no effect for "ph-bg-image"!).
+					* Use class "ph-image-cover-*" to set image overlay opacity. For example "ph-image-cover-2" or "ph-image-cover-2-5" (up to "ph-image-cover-9-5").
+					* Use class "ph-content-parallax" to enable content parallax.
+					* Use class "ph-stroke" to enable caption title stroke style.
+					-->
+					
+
+
+					<!-- *************************************
+					*********** Begin page content *********** 
+					************************************** -->
+					<div id="page-content">
+
+
+						<!-- =======================
+						///// Begin tt-section /////
+						============================ 
+						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+						-->
+						<div id="sdc-target" class="tt-section padding-bottom-150">
+							<div class="tt-section-inner">
+
+								<!-- Begin portfolio list 
+								========================== 
+								* Use class "pl-alter" to enable alternative layout.
+								* Use class "pl-compact" to enable compact layout (no effect with class "pli-info-overlay"!).
+								* Use class "pli-cropped" to crop images (it sets the images to a fixed height).
+								* Use class "pli-hover" to enable item hover effect.
+								* Use class "pli-info-overlay" to enable item info overlay.
+								* Use class "pli-title-stroke" to enable item title stroke effect.
+								* Use class "pli-info-sm", "pli-info-lg", "pli-info-xlg" or "pli-info-xxlg" to set item info size (no class = default size!)
+								-->
+								<div class="portfolio-list pli-cropped pl-compact pli-hover">
+
+									<!-- Begin portfolio list item 
+									===============================
+									* Use class "pli-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pli-info-overlay" is enabled!). 
+									-->
+									{% for post in posts %}
+									<div class="portfolio-list-item">
+										<div class="pli-inner">
+
+											<div class="pli-image-col">
+												<a href="single-project-1.html" class="pli-image-link" data-cursor="View<br>Project">
+													<div class="pli-image-holder">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pli-info-overlay" is enabled on "portfolio-list". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<figure class="pli-image">
+															<img class="anim-image-parallax tt-lazy" src="{{ post.img }}" data-src="assets/img/portfolio/small/portfolio-1.jpg" alt="image">
+														</figure> <!-- /.pli-image -->
+													</div> <!-- /.pli-image-holder -->
+
+													<div class="pli-info-col pli-info-inner">
+														<div class="pli-info">
+															<h2 class="pli-title">{{ post.name }}</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+															<div class="pli-categories-wrap">
+																<div class="pli-category">{{ post.down }}</div>
+																<!-- <div class="pli-category">Varia</div> -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pli-info -->
+													</div> <!-- /.pli-info-col -->
+
+												</a> <!-- /.pli-image-link -->
+											</div> <!-- /.pli-image-col -->
+
+											<div class="pli-info-col pli-info-outer">
+												<div class="pli-info">
+													<div class="pli-counter"></div>
+													<h2 class="pli-title"><a href="single-project-1.html">{{ post.name }}</a></h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+													<div class="pli-categories-wrap">
+														<div class="pli-category">{{ post.down }}</div>
+														<!-- <div class="pli-category">Varia</div> -->
+													</div> <!-- /.pli-categories-wrap -->
+												</div> <!-- /.pli-info -->
+											</div> <!-- /.pli-info-col -->
+
+										</div> <!-- /.pli-inner -->
+									</div> 
+									{% endfor %}
+									<!-- End portfolio list item -->
+
+									
+
+								</div>
+								<!-- End portfolio list -->
+
+
+								<!-- Begin tt-pagination (uncomment below code if you want to use pagination)
+								========================= 
+								* Use class "tt-pagin-center" to align center.
+								-->
+								<!-- <div class="tt-pagination tt-pagin-center margin-top-80 anim-fadeinup tt-wrap">
+									<div class="tt-pagin-prev">
+										<a href="" class="tt-pagin-item magnetic-item"><i class="fas fa-chevron-left"></i></a>
+									</div>
+									<div class="tt-pagin-numbers">
+										<a href="#0" class="tt-pagin-item magnetic-item active">1</a>
+										<a href="" class="tt-pagin-item magnetic-item">2</a>
+										<a href="" class="tt-pagin-item magnetic-item">3</a>
+										<a href="" class="tt-pagin-item magnetic-item">4</a>
+									</div>
+									<div class="tt-pagin-next">
+										<a href="" class="tt-pagin-item tt-pagin-next magnetic-item"><i class="fas fa-chevron-right"></i></a>
+									</div>
+								</div> -->
+								<!-- End tt-pagination -->
+
+							</div> <!-- /.tt-section-inner -->
+						</div>
+						<!-- End tt-section -->
+
+
+						<!-- =======================
+						///// Begin tt-section /////
+						============================ 
+						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+						-->
+						<div class="tt-section padding-bottom-xlg-150">
+							<div class="tt-section-inner tt-wrap">
+
+								<!-- Begin page nav 
+								==================== 
+								* Use class "tt-pn-stroke" to enable title stroke style.
+								* Use class "tt-pn-scroll" to enable hover title scroll. Note: If "tt-pn-hover-title" text is wider than "tt-pn-link" then it scrolls by default. The longer the text, the faster it scrolls.
+								-->
+								<div class="tt-page-nav tt-pn-scroll">
+									<a href="contact.html" class="tt-pn-link anim-fadeinup">
+										<div class="tt-pn-title">About me</div>
+										<div class="tt-pn-hover-title">About me</div>
+									</a> <!-- /.tt-pn-link -->
+
+									<div class="tt-pn-subtitle anim-fadeinup">Get in Touch</div>
+
+									<!-- Use if destination page contains page header image -->
+									<div class="tt-pn-image">
+										<img src="{% static 'img/page-header/ph-3.jpg' %}" alt="image">
+									</div>
+								</div>
+								<!-- End page nav -->
+
+							</div> <!-- /.tt-section-inner -->
+						</div>
+						<!-- End tt-section -->
+
+
+					</div>
+					<!-- End page content -->
+					
+
+					<!-- ======================
+					///// Begin tt-footer /////
+					=========================== -->
+					<footer id="tt-footer">
+						<div class="tt-footer-inner">
+
+							<!-- Begin footer column 
+							========================= -->
+							<div class="footer-col tt-align-center-left">
+								<div class="footer-col-inner">
+
+									<!-- You can use whatever button or link here -->
+									<div class="tt-btn tt-btn-link">
+										<a href="#" class="scroll-to-top" data-hover="Back to top">Back to top</a>
+									</div>
+
+								</div> <!-- /.footer-col-inner -->
+							</div>
+							<!-- Begin footer column -->
+
+							<!-- Begin footer column 
+							========================= -->
+							<div class="footer-col tt-align-center order-m-last">
+								<div class="footer-col-inner">
+
+									<div class="tt-copyright">
+										© Copyright - <a href="https://themetorium.net" target="_blank" rel="noopener" class="tt-link">Themetorium.net</a>
+									</div>
+
+								</div> <!-- /.footer-col-inner -->
+							</div>
+							<!-- Begin footer column -->
+
+							<!-- Begin footer column 
+							========================= -->
+							<div class="footer-col tt-align-center-right">
+								<div class="footer-col-inner">
+
+									<div class="footer-social">
+										<div class="footer-social-text"><span>Follow</span><i class="fas fa-share-alt"></i></div>
+										<div class="social-buttons">
+											<ul>
+												<li><a href="https://www.facebook.com/themetorium" class="magnetic-item" target="_blank" rel="noopener">Fb.</a></li>
+												<li><a href="https://twitter.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Tw.</a></li>
+												<li><a href="https://www.youtube.com/" class="magnetic-item" target="_blank" rel="noopener">Yt.</a></li>
+												<li><a href="https://dribbble.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Dr.</a></li>
+												<li><a href="https://www.behance.net/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Be.</a></li>
+											</ul>
+										</div> <!-- /.social-buttons -->
+									</div> <!-- /.footer-social -->
+
+								</div> <!-- /.footer-col-inner -->
+							</div>
+							<!-- Begin footer column -->
+
+						</div> <!-- /.tt-section-inner -->
+					</footer>
+					<!-- End tt-footer -->
+
+
+				</div>
+				<!-- End content wrap -->
+
+			</div>
+			<!-- End scroll container -->
+
+
+		</main>
+		<!-- End body inner -->
+
+
+        
+
+		<!-- ====================
+		///// Scripts below /////
+		===================== -->
+
+		<!-- Core JS -->
+		<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script> <!-- jquery JS (https://jquery.com) -->
+
+		<!-- Libs and Plugins JS -->
+		<script src="{% static 'vendor/gsap/gsap.min.js' %}"></script> <!-- GSAP JS (https://greensock.com/gsap/) -->
+		<script src="{% static 'vendor/gsap/ScrollToPlugin.min.js' %}"></script> <!-- GSAP ScrollToPlugin JS (https://greensock.com/scrolltoplugin/) -->
+		<script src="{% static 'vendor/gsap/ScrollTrigger.min.js' %}"></script> <!-- GSAP ScrollTrigger JS (https://greensock.com/scrolltrigger/) -->
+
+		<script src="{% static 'vendor/smooth-scrollbar.js' %}"></script> <!-- Smooth Scrollbar JS (https://github.com/idiotWu/smooth-scrollbar/) -->
+		<script src="{% static 'vendor/swiper/js/swiper-bundle.min.js' %}"></script> <!-- Swiper JS (https://swiperjs.com/) -->
+		<script src="{% static 'vendor/isotope/imagesloaded.pkgd.min.js' %}"></script> <!-- imagesloaded JS (more info: https://imagesloaded.desandro.com/) -->
+		<script src="{% static 'vendor/isotope/isotope.pkgd.min.js' %}"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
+		<script src="{% static 'vendor/isotope/packery-mode.pkgd.min.js' %}"></script> <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
+		<script src="{% static 'vendor/lightgallery/js/lightgallery-all.min.js' %}"></script> <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
+		<script src="{% static 'vendor/jquery.mousewheel.min.js' %}"></script> <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
+
+		<!-- Theme master JS -->
+		<script src="{% static 'js/theme.js' %}"></script>
+
+
+
+	</body>
+
+</html>
