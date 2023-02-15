@@ -9,3 +9,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.name
+    
+class CsvFile(models.Model):
+    csv_file = models.FileField(upload_to='documents')
+
+        

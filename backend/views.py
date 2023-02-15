@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Post
+from django.views.generic import *
+
 
 def index(request):
     posts = Post.objects.all()
@@ -22,3 +24,18 @@ def vazifa4(request):
 
 def vazifa5(request):
     return render(request, 'vazifa5.html')
+
+
+
+class CsvUploadView(generic.CreateView):
+
+   model = CsvFile
+   fields = ['csv_file']
+   template_name = 'upload.html'
+
+
+class CsvDownloadView(generic.ListView):
+
+    model = CsvFile
+    fields = ['csv_file']
+    template_name = 'download.html'
