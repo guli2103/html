@@ -77,5 +77,42 @@
             <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
         </symbol>
     </svg>
+
+    <!-- Begin tt-Search 
+									===================== -->
+									<div class="tt-search">
+										<div class="tt-search-close cursor-close">
+											<div class="bg-noise"></div>
+										</div>
+										<div class="tt-search-inner">
+											<h1 class="tt-search-title tt-search-appear">Qidirish</h1>
+
+											<!-- Begin form (Note: for design purposes only!)
+											================ 
+											* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
+											* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
+											-->
+											<form class="tt-search-form tt-search-appear tt-form-minimal tt-form-lg">
+												<div class="tt-form-btn-inside">
+													<input class="tt-form-control" type="text" name="q" id="search" placeholder="Kerakli ma'lumotni yozing..." required>
+													<button type="submit"><i class="fas fa-search"></i></button>
+												</div>
+											</form>
+											 <!-- End form -->
+											
+										</div> <!-- /.tt-search-inner -->
+<!-- 
+										<div class="tt-search-ghost tt-search-appear">SUSYS</div>
+										<div class="tt-search-close-btn hide-cursor" title="Close"><i class="fas fa-times"></i></div> -->
+									</div>
+									<!-- End tt-Search -->
+
+									<input type="button" value="Ortga qaytish" onclick="ortgaQaytish()" >
+									<script>
+										function ortgaQaytish(){
+											window.history.back()
+										}
+									</script>
+
     </body>
 </html>

@@ -20,6 +20,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    <!-- Begin tt-Search 
+									===================== -->
+									<div class="tt-search">
+										<div class="tt-search-close cursor-close">
+											<div class="bg-noise"></div>
+										</div>
+										<div class="tt-search-inner">
+											<h1 class="tt-search-title tt-search-appear">Qidirish</h1>
+
+											<!-- Begin form (Note: for design purposes only!)
+											================ 
+											* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
+											* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
+											-->
+											<form class="tt-search-form tt-search-appear tt-form-minimal tt-form-lg">
+												<div class="tt-form-btn-inside">
+													<input class="tt-form-control" type="text" name="q" id="search" placeholder="Kerakli ma'lumotni yozing..." required>
+													<button type="submit"><i class="fas fa-search"></i></button>
+												</div>
+											</form>
+											 <!-- End form -->
+											
+										</div> <!-- /.tt-search-inner -->
+<!-- 
+										<div class="tt-search-ghost tt-search-appear">SUSYS</div>
+										<div class="tt-search-close-btn hide-cursor" title="Close"><i class="fas fa-times"></i></div> -->
+									</div>
+									<!-- End tt-Search -->
+
+									<input type="button" value="Ortga qaytish" onclick="ortgaQaytish()" >
     <div class="container">
       <div class="color-preview"></div>
       <div class="controls">
@@ -38,7 +68,21 @@
           copied <span class="code">#ed145b</span> to clipboard
         </div>
       </div>
+
+
+      
+								
+
     </div>
+
+
+
+    
+									<script>
+										function ortgaQaytish(){
+											window.history.back()
+										}
+									</script>
 
     <script  src="{% static 'static13/script.js' %}"></script>    
     

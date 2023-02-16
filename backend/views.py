@@ -17,15 +17,12 @@ def index(request):
     }
     return render(request, 'index.html', context )
 
+
 def vazifa1(request ):
     return render(request, 'vazifa1.html')
 
-def vazifa2(request, slug ):
-    vazifa2 = Post.objects.get(slug=slug)
-    context = {
-        'vazifa2': vazifa2
-    }
-    return render(request, 'vazifa2.html', context)
+def vazifa2(request):
+    return render(request, 'vazifa2.html')
 
 def vazifa3(request):
     return render(request, 'vazifa3.html')

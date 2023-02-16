@@ -11,10 +11,51 @@
 <body>
 
     <div id='ship' class='earth'>
+        
         <div id='bullet_point'></div>
         <div id='hits'></div>
         <div id='kills_counter'></div>
-      </div>
+        <input type="button" value="Ortga qaytish" onclick="ortgaQaytish()" >
+        
+    </div>
+    
+ <!-- Begin tt-Search 
+									===================== -->
+									<div class="tt-search">
+										<div class="tt-search-close cursor-close">
+											<div class="bg-noise"></div>
+										</div>
+										<div class="tt-search-inner">
+											<h1 class="tt-search-title tt-search-appear">Qidirish</h1>
+
+											<!-- Begin form (Note: for design purposes only!)
+											================ 
+											* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
+											* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
+											-->
+											<form class="tt-search-form tt-search-appear tt-form-minimal tt-form-lg">
+												<div class="tt-form-btn-inside">
+													<input class="tt-form-control" type="text" name="q" id="search" placeholder="Kerakli ma'lumotni yozing..." required>
+													<button type="submit"><i class="fas fa-search"></i></button>
+												</div>
+											</form>
+											 <!-- End form -->
+											
+										</div> <!-- /.tt-search-inner -->
+<!-- 
+										<div class="tt-search-ghost tt-search-appear">SUSYS</div>
+										<div class="tt-search-close-btn hide-cursor" title="Close"><i class="fas fa-times"></i></div> -->
+									</div>
+									<!-- End tt-Search -->
+
+									
+									<script>
+										function ortgaQaytish(){
+											window.history.back()
+										}
+									</script>
+
+      
 
     <script src="{% static 'static10/main.js' %}"></script>
 </body>
