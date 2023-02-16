@@ -1,0 +1,118 @@
+html {
+	height: 100%;
+	font-size: 1vw;
+}
+
+body {
+	height: 100%;
+	background-color: #020202;
+	overflow: hidden;
+	text-align: center;
+}
+
+.container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.moon {
+	display: inline-block;
+	width: 19rem;
+	height: 19rem;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 0.25rem;
+	transform: rotate(-0.1turn);
+}
+
+.moon:first-of-type .light {
+	animation-delay: -2.5s;
+}
+.moon:nth-child(3) .light {
+	animation-delay: -17.5s;
+}
+
+.light {
+	box-sizing: border-box;
+	width: 20rem;
+	height: 20rem;
+	background-color: #111;
+	border-radius: 50%;
+	animation: cycle 20s linear infinite reverse;
+	animation-delay: -10s;
+	filter: blur(0.5rem);
+}
+
+.texture {
+	width: 19rem;
+	height: 19rem;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: -20rem;
+	/*background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/moon_3.jpg);
+  background-position: center center;*/
+	background-image: radial-gradient(
+			circle at 40% 80%,
+			#ddc997 10%,
+			transparent 0
+		),
+		radial-gradient(circle at 55% 70%, #ddc997 5%, transparent 0),
+		radial-gradient(circle at 58% 85%, #ddc997 6%, transparent 0),
+		radial-gradient(circle at 80% 40%, #ddc997 12%, transparent 0),
+		radial-gradient(circle at 87% 58%, #ddc997 4%, transparent 0);
+	background-repeat: no-repeat;
+	mix-blend-mode: multiply;
+}
+
+.sphere {
+	width: 19.75rem;
+	height: 19.75rem;
+	border-radius: 50%;
+	box-shadow: inset 0 0 10rem #000, inset 0 0 5rem #000, inset 0 0 3rem #000;
+	position: absolute;
+	margin-top: -20.3rem;
+	margin-left: -0.3rem;
+	filter: blur(0.1rem);
+}
+
+@keyframes cycle {
+	0% {
+		border-left: 0 solid #fae4a8;
+		border-right: 10rem solid #111;
+		background-color: #111;
+		transform: rotate(-10deg);
+	}
+	24.9999% {
+		background-color: #111;
+	}
+	25% {
+		border-left: 10rem solid #fae4a8;
+		border-right: 10rem solid #111;
+		background-color: #fae4a8;
+	}
+	50% {
+		border-left: 0 solid #fae4a8;
+		border-right: 0 solid #111;
+		background-color: #fae4a8;
+		transform: rotate(0deg);
+	}
+	50.0001% {
+		border-left: 0 solid #111;
+	}
+	74.9999% {
+		background-color: #fae4a8;
+		border-right: 0 solid #fae4a8;
+	}
+	75% {
+		border-left: 10rem solid #111;
+		border-right: 10rem solid #fae4a8;
+		background-color: #111;
+	}
+	100% {
+		border-left: 10rem solid #111;
+		border-right: 0 solid #fae4a8;
+		background-color: #111;
+		transform: rotate(10deg);
+	}
+}
