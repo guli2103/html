@@ -10,7 +10,14 @@ class Post(models.Model):
     def __str__(self):
         return self.name
     
-class CsvFile(models.Model):
-    csv_file = models.FileField(upload_to='documents')
+
+
+class Certificate(models.Model):
+    name = models.CharField(max_length=80, blank=True, null=True)
+    cert = models.FileField(upload_to='cert/', blank=True, null=True)
+
+
+    def download_link(self):
+        self.cert.url
 
         

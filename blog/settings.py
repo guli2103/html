@@ -12,6 +12,9 @@ SECRET_KEY = 'django-insecure-1w+fkb-036l*w_e+zg4duh&(f-jaga+n-a)rr9txxwn80bra%a
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+if DEBUG:
+    import mimetypes
+    mimetypes.add_type("image/png", ".png", True)
 
 ALLOWED_HOSTS = []
 

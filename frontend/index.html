@@ -231,9 +231,20 @@
 
 													<div class="pli-info-col pli-info-inner">
 														<div class="pli-info">
-															<h2 class="pli-title">{{ post.name }}</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+															<!-- <h2 class="pli-title"><a href="">{{ post.name }}</a></h2>  -->
+															<!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+															
+															{% if post.name == post.name %}
+																<h2 class="pli-title"><a href="vazifa1/{{ post.slug }}">{{ post.name }}</a></h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+															{% elif post.name == post.name %}
+																<h2 class="pli-title"><a href="vazifa2/{{ post.slug }}">{{ post.name }}</a></h2>
+															{% endif %}																
 															<div class="pli-categories-wrap">
-																<div class="pli-category">{{ post.down }}</div>
+																
+																	
+																	<div class="pli-category"><a href="{{ obj.download_link }}" download>{{ post.down }}</a></div>
+																	 
+																	
 																<!-- <div class="pli-category">Varia</div> -->
 															</div> <!-- /.pli-categories-wrap -->
 														</div> <!-- /.pli-info -->
@@ -245,9 +256,15 @@
 											<div class="pli-info-col pli-info-outer">
 												<div class="pli-info">
 													<div class="pli-counter"></div>
-													<h2 class="pli-title"><a href="single-project-1.html">{{ post.name }}</a></h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+													<!-- <h2 class="pli-title"><a href="">{{ post.name }}</a></h2>  -->
+													<!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+													{% if post.name == post.name %}
+														<h2 class="pli-title"><a href="vazifa1/{{ post.slug }}">{{ post.name }}</a></h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+													{% elif post.name == post.name %}
+														<h2 class="pli-title"><a href="vazifa2/{{ post.slug }}">{{ post.name }}</a></h2>
+													{% endif %}	
 													<div class="pli-categories-wrap">
-														<div class="pli-category">{{ post.down }}</div>
+														<div class="pli-category"><a href="{{ obj.download_link }}" download>{{ post.down }}</a></div>
 														<!-- <div class="pli-category">Varia</div> -->
 													</div> <!-- /.pli-categories-wrap -->
 												</div> <!-- /.pli-info -->
