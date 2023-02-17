@@ -1,4 +1,7 @@
 from django.db import models
+
+
+
 class Nomi(models.Model):
     nomi = models.CharField(max_length=255)
 
@@ -14,7 +17,9 @@ class Post(models.Model):
 
     def __str__(self):
         return f' {self.soni} - vazifa '
-    
+
+
+
 
 
 class Certificate(models.Model):
