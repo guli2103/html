@@ -1,9 +1,8 @@
 from django.shortcuts import render
-import os
-from django.conf import settings
-from django.http import HttpResponse, Http404
+from django.urls import reverse_lazy
+from django.views import generic
 from django.db.models import Q
-from .models import Post
+from .models import Post, TopPost
 
 
 
@@ -19,6 +18,16 @@ def index(request):
         'posts' : posts
     }
     return render(request, 'index.html', context )
+
+class PostView(generic.ListView):
+    model = Post
+    template_name = 'index1.html'
+    context_object_name = 'files'
+    paginate_by = 4 
+
+    def get_queryset(self):
+        return Post.objects.order_by('-id')
+
 
 
 def vazifa1(request ):

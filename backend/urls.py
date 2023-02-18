@@ -2,9 +2,10 @@ from django.urls import path
 from .views import *
 from backend.views import *
 from django.views.generic import DetailView,  ListView
+from . import views
 
 urlpatterns = [
-    path('',index ),
+    path('',index , name='index'),
     path('vazifa1/', vazifa1, ),
     path('vazifa2/', vazifa2, ),
     path('vazifa3/', vazifa3, ), 
@@ -25,15 +26,7 @@ urlpatterns = [
     path('vazifa18/', vazifa18,),
     path('vazifa19/', vazifa19,),
     path('vazifa20/', vazifa20,),
+    path('post/', views.PostView.as_view(), name='post')
     
-
-
-    # url(r'^$', ListView.as_view(queryset=Post.objects.all().order_by("-date")[:25],
-    #                                       template_name="project/project.html")),
-    # url(r'^(?P<pk>\d+)$', DetailView.as_view(model=Post, template_name="project/post.html")),
-    # url(r'^upload/$', upload),
-    # url(r'^download/(?P<path>.*)$', serve, {'document root': settings.MEDIA_ROOT}),
-] 
-
-# + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
 
