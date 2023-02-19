@@ -114,7 +114,7 @@ STATICFILES_DIRS = [
 ]
 
 
-AUTH_USER_MODEL='account_User'
+# AUTH_USER_MODEL='account_User'
 STATIC_ROOT=os.path.join(BASE_DIR ,'staticfiles')
 
 MEDIA_ROOT = BASE_DIR/'/media'

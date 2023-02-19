@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+
 
 class TopPost(models.Model):
     turi = models.CharField(max_length=255)
@@ -13,8 +13,8 @@ class Post(models.Model):
     img = models.CharField(max_length=255)
     data = models.DateField(auto_now_add=False)
     many = models.ManyToManyField(TopPost, blank=True)
-    down = models.FileField(upload_to='store/pdfs', max_length=255, null=True, default=None)
-    down1 = models.ImageField(upload_to='store/covers')
+    down = models.FileField(upload_to='media/store/pdfs', max_length=255, null=True, default=None)
+    down1 = models.CharField(max_length=255)
     live = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True)
     

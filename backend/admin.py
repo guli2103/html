@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Post,Nomi
+from .models import Post,TopPost
 
-admin.site.register((Post, Nomi))
+admin.site.register((Post, TopPost))
