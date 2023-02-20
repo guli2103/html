@@ -1,34 +1,62 @@
 from django.shortcuts import render
-from django.urls import reverse_lazy
-from django.views import generic
+import os
+from django.http import HttpResponse
+from django.http import Http404
+from django.conf import settings
 from django.db.models import Q
-from .models import Post, TopPost
+from .models import Post
 
 
 
 
-def index(request):
+def index(request):   
     if 'q' in request.GET:
         q=request.GET['q']
-        post = Q(Q(name__nomi__icontains=q))
+        post = Q(Q(name__many__icontains=q))
         posts = Post.objects.filter(post)
     else: 
         posts = Post.objects.all()
+       
     context = {
         'posts' : posts
     }
     return render(request, 'index.html', context )
 
-class PostView(generic.ListView):
-    model = Post
-    template_name = 'index1.html'
-    context_object_name = 'files'
-    paginate_by = 4 
 
-    def get_queryset(self):
-        return Post.objects.order_by('-id')
+def download(request,path):
+    file_path=os.path.join(settings.MEDIA_ROOT,path)
+    if os.path.exists(file_path):
+        with open(file_path,'rb') as fh:
+            response = HttpResponse(fh.read(), content_type='backend/down')
+            response['Content-Disposition']='inline;filename='+os.path.basename(file_path)
+            return response
+        
+    raise Http404    
+
+    
 
 
+
+
+
+# class PostView(generic.ListView):
+#     model = Post
+#     template_name = 'index1.html'
+#     context_object_name = 'files'
+#     paginate_by = 4 
+
+#     def get_queryset(self):
+#         return Post.objects.order_by('-id')
+
+
+
+def index1(request, slug ):
+    top = Post.objects.get(slug=slug)
+    context = {
+        'top' : top
+    }
+
+    return render(request, 'index1.html', context )
 
 def vazifa1(request ):
 
